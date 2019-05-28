@@ -101,7 +101,7 @@ class EmailSniffer():
         email_msg['To'] = self.SENDER
         email_msg['From'] = self.FROM
 
-        part = MIMEText(msg)
+        part = MIMEText(msg.hex())
         email_msg.attach(part)
 
         attachment = MIMEApplication(msg)
@@ -124,4 +124,4 @@ class EmailSniffer():
         self.alive = False
 
     def append_incoming_attachment_queue(self, queue_to_append):
-        self.incoming_attachment_queue.append(queue_to_append)
+        self.incoming_attachment_queues.append(queue_to_append)
