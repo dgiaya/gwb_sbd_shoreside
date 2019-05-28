@@ -1,2 +1,8 @@
 # Ignore python virtual environment directory
 venv/
+
+#Ignore credentials file with e-mail username and password
+credentials.py
+
+#Ignore log files
+*.log
