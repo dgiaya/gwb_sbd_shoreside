@@ -13,8 +13,8 @@ email = EmailSniffer(
     imap_port=IMAP_PORT,
     smtp_svr=SMTP_SVR,
     smtp_port=SMTP_PORT,
-    subject_line_filt='testmsg',
-    arrival_email_filt= ,
+    imei='300234065063620',
+    arrival_email_filt= 'dgiaya@whoi.edu',
     attachment_ext_filt='.sbd'
 )
 
